@@ -1,0 +1,20 @@
+.full-width-table {
+  width: 100%;
+}
+input{
+  height: 20px;
+  width: 20px;
+}
+
+table{
+  table-layout: fixed;
+  width: 300px;
+}
+
+button{
+  margin-left: 10px;
+}
+
+.fsize{
+  font-size: 10px;
+}

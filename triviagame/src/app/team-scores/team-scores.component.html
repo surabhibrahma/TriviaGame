@@ -1,0 +1,83 @@
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" matSort aria-label="Scores">
+
+    <ng-container matColumnDef="Team1">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Team 1</th>
+      <td mat-cell *matCellDef="let row"><p>{{team1}}</p></td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Team2">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Team 2</th>
+      <td mat-cell *matCellDef="let row"><p>{{team2}}</p></td>
+    </ng-container>
+
+    <ng-container matColumnDef="Team3">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Team 3</th>
+      <td mat-cell *matCellDef="let row"><p>{{team3}}</p></td>
+    </ng-container>
+
+    <ng-container matColumnDef="Team4">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Team 4</th>
+      <td mat-cell *matCellDef="let row"><p>{{team4}}</p></td>
+    </ng-container> 
+
+    <ng-container matColumnDef="Team5">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Team 5</th>
+      <td mat-cell *matCellDef="let row"><p>{{team5}}</p></td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+<!--SPLIT TABLE-->
+<table mat-table class="full-width-table" matSort aria-label="Scores">
+
+  <ng-container matColumnDef="Team1">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      <mat-form-field>
+        <input #team1>
+        <button class="btn btn-success" (click)="addToTeamOne(team1.value)">Add!</button>
+      </mat-form-field>
+    </th>
+  </ng-container>
+
+  <ng-container matColumnDef="Team2">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      <mat-form-field>
+        <input #team2>
+        <button class="btn btn-success" (click)="addToTeamTwo(team2.value)">Add!</button>
+      </mat-form-field>
+    </th>
+  </ng-container>
+
+  <ng-container matColumnDef="Team3">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      <mat-form-field>
+        <input #team3>
+        <button class="btn btn-success" (click)="addToTeamThree(team3.value)">Add!</button>
+      </mat-form-field>
+    </th>
+  </ng-container>
+
+  <ng-container matColumnDef="Team4">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      <mat-form-field>
+        <input #team4>
+        <button class="btn btn-success" (click)="addToTeamFour(team4.value)">Add!</button>
+      </mat-form-field>
+    </th>
+  </ng-container> 
+
+  <ng-container matColumnDef="Team5">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+      <mat-form-field>
+        <input #team5>
+        <button class="btn btn-success" (click)="addToTeamFive(team5.value)">Add!</button>
+      </mat-form-field>
+    </th>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>

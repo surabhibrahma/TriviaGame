@@ -1,0 +1,13 @@
+.full-width-table {
+  width: 100%;
+}
+
+.changecursor{
+  cursor: pointer;
+}
+
+.hoverover:hover{
+  transform: scale(2);
+}
+
+.not-allowed {cursor: not-allowed;}

@@ -1,0 +1,33 @@
+<div class="backdrop" (click)="onClose()"></div>
+<div class="alert-box">
+    <p class="questionstyle">{{question}}</p>
+    <audio controls *ngIf="revealSong10">
+      <source src="assets\audio\Song10KKP.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <audio controls *ngIf="revealSong20">
+      <source src="assets\audio\Song20NDKS.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+      <audio controls *ngIf="revealSong30">
+        <source src="assets\audio\Song30.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <audio controls *ngIf="revealSong40">
+        <source src="assets\audio\Song40JEB.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <audio controls *ngIf="revealSong50">
+        <source src="assets\audio\Song50ORP.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <img src="assets\img\GuessTheSeries.jpg" *ngIf="revealBookCover" alt = "Here is where the picture will gooo" height="300" width="1000"/>
+      <img src="assets\img\DarkRoom.jpg" *ngIf="guessconnection" alt = "Here is where the picture will gooo" height="300" width="300"/>
+      <img src="assets\img\girl.jpg" *ngIf="guessconnection" alt = "Here is where the picture will gooo" height="300" width="200"/>
+      <img src="assets\img\knife.png" *ngIf="guessconnection" alt = "Here is where the picture will gooo" height="300" width="300"/>
+    <br/>
+    <div class="alert-box-actions">
+        <button class="btn btn-success" *ngIf = "answerbutton" (click)="onRevelaAnswer()">Answer</button>
+        <p class="answerstyle" *ngIf="answerrevealed">{{answer}}</p>
+    </div>
+</div>

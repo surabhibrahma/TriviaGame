@@ -1,0 +1,8 @@
+table {
+  width: 100%;
+}
+.heading{
+  font-size: 100px;
+  color:rgb(100, 17, 121);
+  font-weight: bolder;
+}
